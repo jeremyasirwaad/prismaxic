@@ -338,9 +338,9 @@ ul {
 }
 
 .team-area .item:hover .thumb .overlay {
-  top: 50%;
-  transform: translate(-50%, -50%);
-  left: 50%;
+  top: 10%;
+  /* transform: translate(-50%); */
+
 }
 
 .team-area .item .thumb .overlay p {
@@ -490,6 +490,9 @@ ul {
 @media only screen and (max-width: 593px) {
 
   .landtextt1{
-    font-size: 38px;
+
+    font-size: 30px;
+
   }
+
 }
