@@ -1,7 +1,7 @@
 import React from 'react';
 import Meetteam from './Meetteam'
 import { ReactPhotoCollage } from "react-photo-collage";
-
+import { Reviews } from './Reviews';
 const setting = {
   width: '100%',
   height: ['250px', '170px'],
@@ -115,7 +115,7 @@ const Landing = () => {
         </section>
 
         <section>
-
+            <Reviews />
         </section>
     </div>
         </div>
