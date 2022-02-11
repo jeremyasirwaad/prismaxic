@@ -21,6 +21,14 @@ a {
   box-sizing: border-box;
 }
 
+.loader{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+
 .sec1cont{
   display: flex;
   /* justify-content: center; */
@@ -471,6 +479,18 @@ ul {
 
     font-size: 42px;
 
+  }
+
+  .sec2title span{
+    font-size: 18px;
+  }
+
+  .bgimg{
+      height: 500px;
+  }
+
+  .none{
+    display: none;
   }
 
   .sec4cont{

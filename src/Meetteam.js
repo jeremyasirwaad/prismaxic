@@ -1,3 +1,5 @@
+import women1 from './women1.jpg'
+
 const Meetteam = () => {
     return ( 
 
@@ -12,7 +14,7 @@ const Meetteam = () => {
       <div class="col-md-4 single-item">
         <div class="item">
           <div class="thumb">
-            <img class="img-fluid" src="/women1.jpg/" alt="Thumb" />
+            <img class="img-fluid" src={women1} alt="Thumb" />
             <div class="overlay">
               <h4>Lorem Ipsum</h4>
               <p>
@@ -48,7 +50,7 @@ const Meetteam = () => {
       <div class="col-md-4 single-item">
         <div class="item">
           <div class="thumb">
-            <img class="img-fluid" src="/man1.jpg/" alt="Thumb" />
+            <img class="img-fluid" src="./man1.jpg" alt="Thumb" />
             <div class="overlay">
               <h4>Lorem Ipsum</h4>
               <p>
@@ -84,7 +86,7 @@ const Meetteam = () => {
       <div class="col-md-4 single-item">
         <div class="item">
           <div class="thumb">
-            <img class="img-fluid" src="/man2.jpg/" alt="Thumb" />
+            <img class="img-fluid" src="./man2.jpg" alt="Thumb" />
             <div class="overlay">
               <h4>Lorem Ipsum</h4>
               <p>
