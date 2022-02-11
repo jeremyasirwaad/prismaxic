@@ -7,7 +7,7 @@ const Navbar = () => {
             <nav className="navbar navbar-expand-lg navbar-dark  bg-dark">
             <div className="container">
             <a className="navbar-brand d-flex align-items-center fs-4" href="#">
-                <img src="/favicon.png/ " alt="" width="50" height="auto" style={{ marginRight: '20px' }} />
+                <img src="./favicon.png" alt="" width="50" height="auto" style={{ marginRight: '20px' }} />
                 Prismaxic Solutions
                 </a>
 
