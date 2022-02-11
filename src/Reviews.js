@@ -5,7 +5,7 @@ export const Reviews = () => {
     <section id="testimonials" style={{ marginBottom : "40px" }}>
   
     <div class="testimonial-heading meeteamh1">
-        <h1 style={{ fontSize : "clamp(2.5rem, 10vw, 5rem)"  }}>Client Says</h1>
+        <h1 style={{ fontSize : "clamp(2.5rem, 10vw, 5rem)"  }}>​​​​​​​What Our Client's Say</h1>
     </div>
     
     <div class="testimonial-box-container">
