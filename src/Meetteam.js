@@ -1,6 +1,12 @@
 import women1 from './women1.jpg'
-
+import { useEffect } from 'react';
+import Aos from 'aos';
 const Meetteam = () => {
+
+  useEffect(() => {
+    Aos.init({ duration: 1000, once: true})
+  }, []);
+
     return ( 
 
 <section id="team" class="team-area section5">
@@ -10,7 +16,7 @@ const Meetteam = () => {
 
       </div>
     </div>
-    <div class="row team-items">
+    <div class="row team-items" data-aos = "fade-up">
       <div class="col-md-4 single-item">
         <div class="item">
           <div class="thumb">

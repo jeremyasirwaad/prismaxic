@@ -1,16 +1,21 @@
-import React from 'react'
-
+import React, { useEffect } from 'react'
+import Aos from 'aos'
 export const Reviews = () => {
+
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
+
   return (
     <section id="testimonials" style={{ marginBottom : "40px" }}>
   
     <div class="testimonial-heading meeteamh1">
-        <h1 style={{ fontSize : "clamp(2.5rem, 10vw, 5rem)"  }}>​​​​​​​What Our Client's Say</h1>
+        <h1 data-aos="zoom-in" style={{ fontSize : "clamp(2.5rem, 10vw, 5rem)"  }}>​​​​​​​What Our Client's Say</h1>
     </div>
     
     <div class="testimonial-box-container">
 
-      <div class="testimonial-box">
+      <div class="testimonial-box" data-aos="fade-zoom-in">
 
         <div class="box-top">
 

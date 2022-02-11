@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Meetteam from './Meetteam'
 import { ReactPhotoCollage } from "react-photo-collage";
 import { Reviews } from './Reviews';
+import Aos from 'aos';
+import 'aos/dist/aos.css'
+
 
 import wb1 from './web1.jpg'
 const setting = {
@@ -20,6 +23,12 @@ const setting = {
 };
 
 const Landing = () => {
+
+  
+useEffect(() => {
+  Aos.init({ duration: 1000, once: true})
+}, []);
+
     return (
       <div>
       <div >
@@ -27,12 +36,12 @@ const Landing = () => {
         <div className="blackwrap p-5">
           <div className='container sec1cont'>
               <div className='landtextcont'>
-                  <h1 className='landtextt1'>We Provide Solution To All Your Business Requirements.
+                  <h1 data-aos="fade-right" className='landtextt1'>We Provide Solution To All Your Business Requirements.
                   </h1>
-                <span className='exwhatsin'>Experience What's Inside</span>
+                <span data-aos="fade-right" className='exwhatsin'>Experience What's Inside</span>
                   <div>
-                  <button className='button1'>
-                    <span>Lets Talk</span>
+                  <button data-aos="fade-right" className='button1'>
+                    <span >Lets Talk</span>
                   </button>
                   </div>
               </div>
@@ -43,8 +52,8 @@ const Landing = () => {
       <section className=' text-dark sec2 bg-light text-center'>
         <div className='container'>
           <div className='sec2title'>
-            <span className='sec2t1'>What We Do ?</span>
-            <span>"We aim to provide a seamless
+            <span className='sec2t1' data-aos="zoom-in">What We Do ?</span>
+            <span data-aos="zoom-in">"We aim to provide a seamless
               growth strategy and services to
               remove process bottlenecks
               Our process is simple. We understand
@@ -58,42 +67,42 @@ const Landing = () => {
 
       <section className='pt-5 text-dark'>
           <div className="container  mt-3 sec3cont">
-              <h1 className='sec3ti'> <span style={{color:"red"}}>Industries</span> We Serve</h1>
+              <h1 className='sec3ti'> <span data-aos="zoom-in" style={{color:"red"}}>Industries</span> We Serve</h1>
               <div className='industdiv'> 
-                  <div className="indust1">
+                  <div data-aos="fade-up" className="indust1">
                     <img src={require('./img1.jpg')} alt="" />
                     <div className='indtextpad'><h5>Food & Restaurent Solutions <br/> </h5><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio qui eum modi dolor fugit eos quos quas dolorem architecto quae! Consequatur voluptas officia ad </span></div>
                   </div>
-                  <div className="indust1">
+                  <div data-aos="fade-up" className="indust1">
                     <img src={require('./img2.jpg')} alt="" />
                     <div className='indtextpad'><h5>Healthcare &
 Medical IT Solutions <br/> </h5><span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti veniam, fugiat ratione sapiente tempora </span></div>
                   </div>
-                  <div className="indust1">
+                  <div data-aos="fade-up" className="indust1">
                     <img src={require('./img3.jpg')} alt="" />
                     <div className='indtextpad'><h5>Real Estate &
 Housing Solutions</h5><span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti veniam, fugiat ratione sapiente tempora </span></div>
                   </div>
-                  <div className="indust1">
+                  <div data-aos="fade-up" className="indust1">
                     <img src={require('./img4.jpg')} alt="" />
                     <div className='indtextpad'><h5>Banking & Finance Solutions <br/> </h5><span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti veniam, fugiat ratione sapiente tempora </span></div>
                   </div>
-                  <div className="indust1">
+                  <div data-aos="fade-up" className="indust1">
                     <img src={require('./img5.jpg')} alt="" />
                     <div className='indtextpad'><h5>Travel & Leisure
 Solutions</h5><span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti veniam, fugiat ratione sapiente tempora </span></div>
                   </div>
-                  <div className="indust1 none">
+                  <div data-aos="fade-up" className="indust1 none">
                     <img src={require('./img6.jpg')} alt="" />
                     <div className='indtextpad'><h5>Education &
 eLearning Solutions</h5><span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti veniam, fugiat ratione sapiente tempora </span></div>
                   </div>
-                  <div className="indust1 none">
+                  <div data-aos="fade-up" className="indust1 none">
                     <img src={require('./img7.jpg')} alt="" />
                     <div className='indtextpad'><h5>Transportation &
 Automobile Solutions</h5><span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti veniam, fugiat ratione sapiente tempora </span></div>
                   </div>
-                  <div className="indust1 none">
+                  <div data-aos="fade-up" className="indust1 none">
                     <img src={require('./img8.jpg')} alt="" />
                     <div className='indtextpad'><h5>Social Networking
 Solutions</h5><span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti veniam, fugiat ratione sapiente tempora </span></div>
@@ -105,11 +114,11 @@ Solutions</h5><span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. De
       <section className='bg-dark text-light mt-5 sec4'>
         <div className="container sec4cont"> 
         <div className="sec4textcont">
-          <h1>Our Latest <span style={{ color: "red" }}>Projects</span></h1>
-          <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt nostrum voluptate praesentium nisi, eveniet itaque corrupti culpa vel nobis veritatis labore cumque quod doloremque architecto sequi maxime blanditiis. Eius temporibus corrupti consectetur ipsa dolorum, enim praesentium magnam, omnis error nihil iusto 
+          <h1 data-aos ="fade-right">Our Latest <span style={{ color: "red" }}>Projects</span></h1>
+          <span data-aos ="fade-right">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt nostrum voluptate praesentium nisi, eveniet itaque corrupti culpa vel nobis veritatis labore cumque quod doloremque architecto sequi maxime blanditiis. Eius temporibus corrupti consectetur ipsa dolorum, enim praesentium magnam, omnis error nihil iusto 
             quis itaque placeat suscipit est delectus sapiente commodi officia Lorem ips.</span>
         </div> 
-        <div className="caro">
+        <div className="caro ">
           <ReactPhotoCollage {...setting} />
         </div>
         </div>
